@@ -16,6 +16,7 @@ public class PlayerScript : MonoBehaviour
 
     bool isMoveRight = true;
     bool doneMoving = true;
+    bool isGrounded = true;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class PlayerScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.W))
         {
             player_RB.AddForce(Up * jumpStrength, ForceMode.Impulse);
+            isGrounded = false;
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -57,15 +59,15 @@ public class PlayerScript : MonoBehaviour
             }
         }
 
-        player_Anim.SetBool("isMoving", player_RB.velocity.magnitude > 0.0f);
-
-        if (player_RB.velocity.y != 0.0f)
+        if (!isGrounded)
         {
             player_Anim.SetBool("isJumping", true);
+            player_Anim.SetBool("isMoving", false);
         }
         else
         {
             player_Anim.SetBool("isJumping", false);
+            player_Anim.SetBool("isMoving", player_RB.velocity.magnitude > 0.01f);
         }
     }
 
@@ -83,6 +85,16 @@ public class PlayerScript : MonoBehaviour
                 transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, -Mathf.Abs(transform.localScale.z));
             }
             doneMoving = true;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (Mathf.Abs(player_RB.velocity.y) < 0.001f)
+        {
+            isGrounded = true;
+            player_Anim.SetBool("isJumping", false);
+            player_Anim.SetBool("isMoving", player_RB.velocity.magnitude > 0.01f);
         }
     }
 }

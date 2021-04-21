@@ -15,11 +15,11 @@ C:/Users/ruich/Documents/GitHub/GAME3002_A3_101277255/GAME3002_A3_101277255
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55805
+56080
 Successfully changed project path to: C:/Users/ruich/Documents/GitHub/GAME3002_A3_101277255/GAME3002_A3_101277255
 C:/Users/ruich/Documents/GitHub/GAME3002_A3_101277255/GAME3002_A3_101277255
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 28.32 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 29.09 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.0f1 (3721df5a8b28)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Resources/UnitySubsystems
@@ -35,302 +35,327 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56648
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56924
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004384 seconds.
+Registered in 0.004696 seconds.
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 28.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 26.98 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.750 seconds
+- Completed reload, in  1.728 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001121 seconds.
+Registered in 0.001110 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.35 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.009 seconds
+- Completed reload, in  1.006 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 0.24 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.26 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1097 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 57.4 MB.
-System memory in use after: 57.4 MB.
+System memory in use after: 57.5 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1539.
-Total: 3.259500 ms (FindLiveObjects: 0.267000 ms CreateObjectMapping: 0.094600 ms MarkObjects: 2.787700 ms  DeleteObjects: 0.108000 ms)
+Total: 2.539600 ms (FindLiveObjects: 0.217600 ms CreateObjectMapping: 0.052600 ms MarkObjects: 2.182400 ms  DeleteObjects: 0.085200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/PhysicsMaterial/IcyMat.physicMaterial
-  artifactKey: Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/IcyMat.physicMaterial using Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beeb47edd81491dd91790c3a14947fa3') in 0.069281 seconds
-  Import took 0.072954 seconds .
+  path: Assets/Prefabs/IceSurfaces.prefab
+  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4259689fd0aa816f90863819addc6ca') in 0.058964 seconds
+  Import took 0.061761 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.156459 seconds.
-  path: Assets/PhysicsMaterial/IcyMaterial.physicMaterial
-  artifactKey: Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/IcyMaterial.physicMaterial using Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91df288e1d7bc2cade422a34565805cc') in 0.008966 seconds
-  Import took 0.012277 seconds .
+  Time since last request: 4.183760 seconds.
+  path: Assets/Prefabs/IceSurfaces.prefab
+  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3859a93e54fbd8cac2136ee71e82e23b') in 0.009535 seconds
+  Import took 0.012098 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 139.604288 seconds.
-  path: Assets/PhysicsMaterial/IcyMaterial.physicMaterial
-  artifactKey: Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/IcyMaterial.physicMaterial using Guid(3a0f25135283c944497234030245bd1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e366b3e1be3d871449fb46b794cf3c16') in 0.008422 seconds
-  Import took 0.011336 seconds .
+  Time since last request: 3.230483 seconds.
+  path: Assets/Prefabs/IceSurfaces.prefab
+  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5caf62780ff861f93401c0be134549') in 0.009267 seconds
+  Import took 0.012151 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 76.284893 seconds.
-  path: Assets/PhysicsMaterial/BouncyMaterial.physicMaterial
-  artifactKey: Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/BouncyMaterial.physicMaterial using Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81776d07ebbc7785267b3b6ef04d5815') in 0.009398 seconds
-  Import took 0.012356 seconds .
+  Time since last request: 23.019458 seconds.
+  path: Assets/Prefabs/IceSurfaces.prefab
+  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58472f7e50876e4498bb6f113358f9f9') in 0.087344 seconds
+  Import took 0.090245 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002858 seconds.
-  path: Assets/PhysicsMaterial/BouncyMaterial.physicMaterial
-  artifactKey: Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/BouncyMaterial.physicMaterial using Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81776d07ebbc7785267b3b6ef04d5815') in 0.008137 seconds
-  Import took 0.011074 seconds .
+  Time since last request: 69.043954 seconds.
+  path: Assets/Prefabs/IceSurfaces.prefab
+  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b430094c2ba9874fb04bf02ae8d262f') in 0.022291 seconds
+  Import took 0.025691 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.012097 seconds.
-  path: Assets/PhysicsMaterial/Concrete.physicMaterial
-  artifactKey: Guid(b345725475099a04b945a98f23fe0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/Concrete.physicMaterial using Guid(b345725475099a04b945a98f23fe0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2d808f86fef14f6c547664e9155bf5') in 0.010820 seconds
-  Import took 0.014057 seconds .
+  Time since last request: 21.407659 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f17ec87eb9fc6dd40d720cfda83cb1') in 0.014775 seconds
+  Import took 0.018267 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000730 seconds.
-  path: Assets/PhysicsMaterial/Concrete.physicMaterial
-  artifactKey: Guid(b345725475099a04b945a98f23fe0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/Concrete.physicMaterial using Guid(b345725475099a04b945a98f23fe0e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f2d808f86fef14f6c547664e9155bf5') in 0.007476 seconds
-  Import took 0.010116 seconds .
+  Time since last request: 0.006936 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55f17ec87eb9fc6dd40d720cfda83cb1') in 0.009419 seconds
+  Import took 0.012815 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.525777 seconds.
-  path: Assets/PhysicsMaterial/BouncyMaterial.physicMaterial
-  artifactKey: Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PhysicsMaterial/BouncyMaterial.physicMaterial using Guid(1c2c4e4f9d77b824bb1f3a72c9fe38e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4b5fc9ff441056428bfdc1e093999a') in 0.008088 seconds
-  Import took 0.012370 seconds .
+  Time since last request: 8.976751 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88dfb16bcb18a6e07bc19ba77e05fab3') in 0.009039 seconds
+  Import took 0.012419 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 492.515377 seconds.
-  path: Assets/DungeonTraps/Trap/Axe.FBX
-  artifactKey: Guid(dd7cc768a6132134d814e304aeaaffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Axe.FBX using Guid(dd7cc768a6132134d814e304aeaaffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f92cc06b34ea3520f9802dd2740b54e') in 0.355259 seconds
-  Import took 0.358197 seconds .
+  Time since last request: 8.251908 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c43f99a5e5accac1a902a0d15de28782') in 0.017657 seconds
+  Import took 0.020706 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/DungeonTraps/Trap/Spoon.FBX
-  artifactKey: Guid(2652aade18e3fa2459b9f3cc633dc85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Spoon.FBX using Guid(2652aade18e3fa2459b9f3cc633dc85a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afe294d85dfdab1a0676ae2a208246df') in 0.055018 seconds
-  Import took 0.057590 seconds .
+  Time since last request: 57.108354 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08fdf50080f700f9feec67844e4c396a') in 0.020765 seconds
+  Import took 0.023604 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/DungeonTraps/Trap/BladeFrame.FBX
-  artifactKey: Guid(f21a06c8e9720ef4d8c84b13183cf183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/BladeFrame.FBX using Guid(f21a06c8e9720ef4d8c84b13183cf183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da193e6474b8f62795c01aa2c130975a') in 0.051853 seconds
-  Import took 0.054882 seconds .
+  Time since last request: 13.156779 seconds.
+  path: Assets/Prefabs/SlowDown.prefab
+  artifactKey: Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SlowDown.prefab using Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03e86215f2fd1f29c5cb536d4599b50') in 0.011990 seconds
+  Import took 0.015274 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000410 seconds.
-  path: Assets/DungeonTraps/Trap/SawBladeFrameBar.FBX
-  artifactKey: Guid(45cdd7be55c783844add8ed6d9828f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/SawBladeFrameBar.FBX using Guid(45cdd7be55c783844add8ed6d9828f62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '350792aa3495b894f30ad146be4a811f') in 0.050240 seconds
-  Import took 0.053720 seconds .
+  Time since last request: 0.008835 seconds.
+  path: Assets/Prefabs/SlowDown.prefab
+  artifactKey: Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SlowDown.prefab using Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f03e86215f2fd1f29c5cb536d4599b50') in 0.008642 seconds
+  Import took 0.011478 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/DungeonTraps/Trap/Blade.FBX
-  artifactKey: Guid(d7c86d0a96a13c94b9624c29250e11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Blade.FBX using Guid(d7c86d0a96a13c94b9624c29250e11e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f01f777e56b040b755dba7268339f41') in 0.053114 seconds
-  Import took 0.055984 seconds .
+  Time since last request: 52.132585 seconds.
+  path: Assets/Prefabs/BounceSurface.prefab
+  artifactKey: Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/BounceSurface.prefab using Guid(ef085ad9a3083314a8de13623c9bfbe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e522a20d12f4acdeb200d654d3892d23') in 0.016729 seconds
+  Import took 0.019516 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000309 seconds.
-  path: Assets/DungeonTraps/Trap/SawBladeFrameCap.FBX
-  artifactKey: Guid(08b067646baffe04ea136d5357680c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/SawBladeFrameCap.FBX using Guid(08b067646baffe04ea136d5357680c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13bea0793c0933f4e7554751305f267e') in 0.057295 seconds
-  Import took 0.060580 seconds .
+  Time since last request: 13.362915 seconds.
+  path: Assets/Prefabs/SlowDown.prefab
+  artifactKey: Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SlowDown.prefab using Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25dc9f41746367a627587434d4376eb7') in 0.010150 seconds
+  Import took 0.013613 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000217 seconds.
-  path: Assets/DungeonTraps/Trap/GreatAxeRing.FBX
-  artifactKey: Guid(bab1d8e407bbb19498ba98659c7ea4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/GreatAxeRing.FBX using Guid(bab1d8e407bbb19498ba98659c7ea4af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13893c899eda3834aee9be307ba1f7a') in 0.050118 seconds
-  Import took 0.052712 seconds .
+  Time since last request: 5.245656 seconds.
+  path: Assets/Prefabs/SlowDown.prefab
+  artifactKey: Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SlowDown.prefab using Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9761312e0b9778e19a497a0d6edc9551') in 0.009140 seconds
+  Import took 0.012434 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/DungeonTraps/Trap/Spear.FBX
-  artifactKey: Guid(edebf8234a6037b40abab643812d316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Spear.FBX using Guid(edebf8234a6037b40abab643812d316a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38c5e353bc5a8c2dd1b02dc8cf409723') in 0.047118 seconds
-  Import took 0.049462 seconds .
+  Time since last request: 4.836455 seconds.
+  path: Assets/Prefabs/SlowDown.prefab
+  artifactKey: Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/SlowDown.prefab using Guid(19b329ed1eaa6a242a8a6dc7f4c64497) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00771cca43910f13a38bd904a4de236f') in 0.017695 seconds
+  Import took 0.020725 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000302 seconds.
-  path: Assets/DungeonTraps/Trap/Hammer.FBX
-  artifactKey: Guid(d768d928a70b225449fbb445abf50afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Hammer.FBX using Guid(d768d928a70b225449fbb445abf50afe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7380aa65abe8ff89bb44d2a9895246b4') in 0.052510 seconds
-  Import took 0.055386 seconds .
+  Time since last request: 7.418224 seconds.
+  path: Assets/Materials/leafs.mat
+  artifactKey: Guid(7c01593c5d37ef04ab1b92759468326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/leafs.mat using Guid(7c01593c5d37ef04ab1b92759468326e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe3366d06829403445a59ef5f3cd15d') in 0.039138 seconds
+  Import took 0.041729 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000347 seconds.
-  path: Assets/DungeonTraps/Trap/Axe.FBX
-  artifactKey: Guid(dd7cc768a6132134d814e304aeaaffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Axe.FBX using Guid(dd7cc768a6132134d814e304aeaaffdb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f92cc06b34ea3520f9802dd2740b54e') in 0.041394 seconds
-  Import took 0.044713 seconds .
+  Time since last request: 168.807300 seconds.
+  path: Assets/Scenes/SampleScene.unity
+  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40634f92d4e036587b0d4aa3e956feb5') in 0.010556 seconds
+  Import took 0.014123 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000289 seconds.
-  path: Assets/DungeonTraps/Trap/Stone.FBX
-  artifactKey: Guid(476893ca37405624c835218deedc81e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Stone.FBX using Guid(476893ca37405624c835218deedc81e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5bc3919bfbc9eb6776a2c9fce5dff09') in 0.048495 seconds
-  Import took 0.051333 seconds .
+  Time since last request: 49.098448 seconds.
+  path: Assets/DungeonTraps/Trap
+  artifactKey: Guid(c76160d3a1a07634e85f0b7a659505ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap using Guid(c76160d3a1a07634e85f0b7a659505ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1cf5c1e369ee4866fac05961da9ba8d') in 0.027472 seconds
+  Import took 0.030332 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000256 seconds.
-  path: Assets/DungeonTraps/Trap/GreatAxe.FBX
-  artifactKey: Guid(b9cb6abd86b0af442b58106bea0f3ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/GreatAxe.FBX using Guid(b9cb6abd86b0af442b58106bea0f3ebe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0adfec5a557d66b4bca7e1858bb5fedd') in 0.054855 seconds
-  Import took 0.057256 seconds .
+  Time since last request: 3.208236 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab
+  artifactKey: Guid(69841fe0b86d7c6439b09330a86cb073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab using Guid(69841fe0b86d7c6439b09330a86cb073) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f8afc476933f4724e739dc003b95d11') in 0.009242 seconds
+  Import took 0.012760 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000370 seconds.
-  path: Assets/DungeonTraps/Trap/Trap_Cutter.FBX
-  artifactKey: Guid(9bf07121db191094aa8381ef67016a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Trap_Cutter.FBX using Guid(9bf07121db191094aa8381ef67016a19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be4877694877afe35a7a4b94e06231b5') in 0.066450 seconds
-  Import took 0.069430 seconds .
+  Time since last request: 0.070867 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_AxeTrap.prefab
+  artifactKey: Guid(2a6a1016b6a7de34889e991f0126ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_AxeTrap.prefab using Guid(2a6a1016b6a7de34889e991f0126ce38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9182887f48a1c49bb935d7a6489a43') in 0.048614 seconds
+  Import took 0.052007 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000233 seconds.
-  path: Assets/DungeonTraps/Trap/SpearLauncher.FBX
-  artifactKey: Guid(6d1acf5ed9a24034892904fdd6c59359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/SpearLauncher.FBX using Guid(6d1acf5ed9a24034892904fdd6c59359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '641e97a3d3e278feb762e2772c03504b') in 0.049162 seconds
-  Import took 0.051682 seconds .
+  Time since last request: 0.000279 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_SawTrap01.prefab
+  artifactKey: Guid(a5939b4c5392ebf4cad04ece1aa33190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_SawTrap01.prefab using Guid(a5939b4c5392ebf4cad04ece1aa33190) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17451461e6a8b8fb16ca865b5f06279') in 0.036787 seconds
+  Import took 0.039408 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000236 seconds.
-  path: Assets/DungeonTraps/Trap/Trap_Fire.FBX
-  artifactKey: Guid(8e5464c3bc40f874a932550f5cc4fd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Trap_Fire.FBX using Guid(8e5464c3bc40f874a932550f5cc4fd9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60fb757c16da6e72df3dc0635ebf87b6') in 0.048011 seconds
-  Import took 0.050536 seconds .
+  Time since last request: 0.000298 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Stone.prefab
+  artifactKey: Guid(7215ecca71a9d854d8e685613e73af92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Stone.prefab using Guid(7215ecca71a9d854d8e685613e73af92) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b30af9b618a529f1ea67886bdc96462') in 0.034288 seconds
+  Import took 0.037860 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000240 seconds.
-  path: Assets/DungeonTraps/Trap/AxeRing.FBX
-  artifactKey: Guid(67dc04eafc9ff5047a172f6abe1deb8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/AxeRing.FBX using Guid(67dc04eafc9ff5047a172f6abe1deb8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '74cb7b6ba179836804c0a00db769d5bb') in 0.064598 seconds
-  Import took 0.066904 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000312 seconds.
-  path: Assets/DungeonTraps/Trap/Shuriken02.FBX
-  artifactKey: Guid(e381f218b6fc4b640bf8b7bdea5002c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Shuriken02.FBX using Guid(e381f218b6fc4b640bf8b7bdea5002c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2676698c5fb809ffccf434d7155692cb') in 0.047524 seconds
-  Import took 0.050952 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/DungeonTraps/Trap/Trap_Needle.FBX
-  artifactKey: Guid(a07105af0bc77a942ac71b139b8f4c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Trap_Needle.FBX using Guid(a07105af0bc77a942ac71b139b8f4c4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9a85483b7b07f8c7f53e838c4450b62') in 0.064837 seconds
-  Import took 0.067612 seconds .
+  Time since last request: 0.000319 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Fire.prefab
+  artifactKey: Guid(c8dc2031dea625e46a42a7c1688cf26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Fire.prefab using Guid(c8dc2031dea625e46a42a7c1688cf26d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4497ba6c6628f5c3bfed01d5b48631e9') in 0.134971 seconds
+  Import took 0.137775 seconds .
 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000362 seconds.
-  path: Assets/DungeonTraps/Trap/Shuriken01.FBX
-  artifactKey: Guid(778d36db5b078174c93a9b156467e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/Shuriken01.FBX using Guid(778d36db5b078174c93a9b156467e4f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6eeea8f2d84fd066e54bf858649581a') in 0.050950 seconds
-  Import took 0.053345 seconds .
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_BladeTrap.prefab
+  artifactKey: Guid(d5d36540320e5c04487d3779141d6971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_BladeTrap.prefab using Guid(d5d36540320e5c04487d3779141d6971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2e5a625f1503ebe33fdbcd6a76d0568') in 0.026486 seconds
+  Import took 0.029078 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000269 seconds.
-  path: Assets/DungeonTraps/Trap/SawBlade.FBX
-  artifactKey: Guid(e3a25d4ccafb5c740aa3c70982a173e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/DungeonTraps/Trap/SawBlade.FBX using Guid(e3a25d4ccafb5c740aa3c70982a173e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd92fcb3cd98064c34c8cfcacc2e45493') in 0.054421 seconds
-  Import took 0.057312 seconds .
+  Time since last request: 0.000327 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Shuriken01.prefab
+  artifactKey: Guid(eb8dff7252c175247a45389403b9ddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Shuriken01.prefab using Guid(eb8dff7252c175247a45389403b9ddf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb48bfa8aa9fd518921334e8221c26a3') in 0.029095 seconds
+  Import took 0.032508 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.530078 seconds.
-  path: Assets/Prefabs
-  artifactKey: Guid(8c6b228fe81126b48be0eecbac8bd573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs using Guid(8c6b228fe81126b48be0eecbac8bd573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61b55d54cbf7a8497baff10ba755890b') in 0.011824 seconds
-  Import took 0.014491 seconds .
+  Time since last request: 0.000284 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_SpearTrap.prefab
+  artifactKey: Guid(427e851e8ea40af4a9c14a042a3f35ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_SpearTrap.prefab using Guid(427e851e8ea40af4a9c14a042a3f35ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcc6293c8343b79a51fbbffc3436b317') in 0.027556 seconds
+  Import took 0.030606 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 10.639362 seconds.
-  path: Assets/Prefabs/IceSurfaces.prefab
-  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6244bf6c5d568c5eee16cbb32c4fad64') in 0.013694 seconds
-  Import took 0.016521 seconds .
+  Time since last request: 0.000286 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Needle.prefab
+  artifactKey: Guid(afd19ab1d4bb70b499bb2f62171a522d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Needle.prefab using Guid(afd19ab1d4bb70b499bb2f62171a522d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6ac97f53c8d5d66491025ac8076ddc') in 0.025368 seconds
+  Import took 0.028482 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002798 seconds.
-  path: Assets/Prefabs/IceSurfaces.prefab
-  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6244bf6c5d568c5eee16cbb32c4fad64') in 0.012134 seconds
-  Import took 0.014820 seconds .
+  Time since last request: 0.000268 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_GreatAxeTrap.prefab
+  artifactKey: Guid(3d0ba9093894f82429688ddeb31a11f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_GreatAxeTrap.prefab using Guid(3d0ba9093894f82429688ddeb31a11f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71c347b4abf82fc4e2e98ddea25d2757') in 0.032233 seconds
+  Import took 0.035356 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.278212 seconds.
-  path: Assets/Prefabs/IceSurfaces.prefab
-  artifactKey: Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/IceSurfaces.prefab using Guid(5eb67ec94e6e3fe40ad93e714b8870d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45926f9addd733119120e27a769e3d5b') in 0.023442 seconds
-  Import took 0.026588 seconds .
+  Time since last request: 0.000249 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Shuriken02.prefab
+  artifactKey: Guid(4aa96aab3ae68a9419ef081a62b461d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Shuriken02.prefab using Guid(4aa96aab3ae68a9419ef081a62b461d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c58f6e69f4f1109f819f54369d89a42') in 0.022024 seconds
+  Import took 0.024622 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_HammerTrap.prefab
+  artifactKey: Guid(f72a59c09a71ed64381535a24991d8b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_HammerTrap.prefab using Guid(f72a59c09a71ed64381535a24991d8b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84614516d830c3ddaf4c67ebcaea67f0') in 0.032780 seconds
+  Import took 0.035773 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000303 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_SawTrap02.prefab
+  artifactKey: Guid(04c11f75ea6385a4eb9f4f260aba0402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_SawTrap02.prefab using Guid(04c11f75ea6385a4eb9f4f260aba0402) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c2afceaf81698580fa9c5d8af6f4d6f') in 0.043882 seconds
+  Import took 0.046844 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000414 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Cutter.prefab
+  artifactKey: Guid(28ad6bc8a17e7284d884987726cf5100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_Trap_Cutter.prefab using Guid(28ad6bc8a17e7284d884987726cf5100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0771fdb722264f7f376ae8e7a08c2c3d') in 0.028109 seconds
+  Import took 0.030931 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_SpoonTrap.prefab
+  artifactKey: Guid(4fa16beb95824b543a4243439d735bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_SpoonTrap.prefab using Guid(4fa16beb95824b543a4243439d735bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8c7d1ca89f0e6074a884804e7c7f0a') in 0.030639 seconds
+  Import took 0.034570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003994 seconds.
+  path: Assets/DungeonTraps/Trap/Prefab/Pf_SpoonTrap.prefab
+  artifactKey: Guid(4fa16beb95824b543a4243439d735bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DungeonTraps/Trap/Prefab/Pf_SpoonTrap.prefab using Guid(4fa16beb95824b543a4243439d735bf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8c7d1ca89f0e6074a884804e7c7f0a') in 0.022441 seconds
+  Import took 0.025788 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

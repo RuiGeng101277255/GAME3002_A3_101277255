@@ -4,13 +4,13 @@ public class PlayerScript : MonoBehaviour
 {
     public float jumpStrength = 10.0f;
     public float moveSpeedRate = 0.5f;
+    public int LevelofSecurity = 0;
 
     Animator player_Anim;
     Rigidbody player_RB;
 
     //Regardless of player's orientation
     Vector3 Up = new Vector3(0.0f, 1.0f, 0.0f);
-    Vector3 Down = new Vector3(0.0f, -1.0f, 0.0f);
     Vector3 Left = new Vector3(-1.0f, 0.0f, 0.0f);
     Vector3 Right = new Vector3(1.0f, 0.0f, 0.0f);
 

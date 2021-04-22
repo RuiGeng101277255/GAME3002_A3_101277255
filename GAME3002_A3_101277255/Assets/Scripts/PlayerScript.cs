@@ -8,6 +8,8 @@ public class PlayerScript : MonoBehaviour
     public float maxVelocityMag;
     public int PlayerInitialLiveCount;
     public float deathDuration;
+    public ScreenMessageScript screenM;
+    public TimerScript timer;
 
     Animator player_Anim;
     Rigidbody player_RB;
@@ -21,6 +23,7 @@ public class PlayerScript : MonoBehaviour
     bool doneMoving = true;
     bool isGrounded = true;
     bool isDead = false;
+    bool gameOver = false;
 
     float tempDisableTimer;
 
@@ -37,22 +40,25 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isDead)
+        if (!gameOver)
         {
-            tempDisableTimer = deathDuration;
-            isDead = false;
-        }
-        else
-        {
-            if (tempDisableTimer > 0.0f)
+            if (isDead)
             {
-                tempDisableTimer -= Time.deltaTime;
+                tempDisableTimer = deathDuration;
+                isDead = false;
             }
             else
             {
-                CheckPlayerInput();
-                checkOrientation();
-                checkIfGroundedAnim();
+                if (tempDisableTimer > 0.0f)
+                {
+                    tempDisableTimer -= Time.deltaTime;
+                }
+                else
+                {
+                    CheckPlayerInput();
+                    checkOrientation();
+                    checkIfGroundedAnim();
+                }
             }
         }
     }
@@ -64,18 +70,26 @@ public class PlayerScript : MonoBehaviour
 
     public void die()
     {
-        if (PlayerInitialLiveCount > 0)
+        if (PlayerInitialLiveCount > 1)
         {
             PlayerInitialLiveCount -= 1;
             player_RB.position = player_reSpawnPos;
             isDead = true;
-
-            print(PlayerInitialLiveCount);
         }
         else
         {
-            //you lose
+            screenM.setTextDisplayed("YOU LOST!");
+            PlayerInitialLiveCount = 0;
+            timer.isPaused = true;
+            gameOver = true;
         }
+    }
+
+    public void PlayerWins()
+    {
+        screenM.setTextDisplayed("YOU WIN!");
+        timer.isPaused = true;
+        gameOver = true;
     }
 
     private void CheckPlayerInput()
@@ -91,7 +105,7 @@ public class PlayerScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-            if (player_RB.velocity.magnitude < maxVelocityMag)
+            if (Mathf.Abs(player_RB.velocity.x) < maxVelocityMag)
             {
                 player_RB.AddForce(Left * moveSpeedRate, ForceMode.Impulse);
             }
@@ -104,7 +118,7 @@ public class PlayerScript : MonoBehaviour
         }
         else if (Input.GetKey(KeyCode.D))
         {
-            if (player_RB.velocity.magnitude < maxVelocityMag)
+            if (Mathf.Abs(player_RB.velocity.x) < maxVelocityMag)
             {
                 player_RB.AddForce(Right * moveSpeedRate, ForceMode.Impulse);
             }
@@ -141,12 +155,25 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        //when player isn't in contact with anything, aka in air
-        isGrounded = false;
+        //when player isn't in contact with anything, aka in air or stationary
+
+        //if (player_RB.velocity.magnitude < 0.1f)
+        //{
+        //    isGrounded = true;
+        //}
+        //else
+        //{
+        //    isGrounded = false;
+        //}
     }
 
     private void checkIfGroundedAnim()
     {
+        if (player_RB.velocity.magnitude < 0.1f)
+        {
+            isGrounded = true;
+        }
+
         if (isGrounded)
         {
             player_Anim.SetBool("isJumping", false);

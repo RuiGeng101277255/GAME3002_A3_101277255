@@ -5,9 +5,7 @@ using UnityEngine;
 public class SpeedTriggerScript : MonoBehaviour
 {
     public float RateChange; //will be multiplied to the player's movement variables
-
-    float tempPlayerJumpRateInit;
-    float tempPlayerMoveSpeedInit;
+    public bool isGoal;
 
     // Start is called before the first frame update
     void Start()
@@ -23,23 +21,41 @@ public class SpeedTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<PlayerScript>())
+        if (!isGoal)
         {
-            tempPlayerJumpRateInit = other.GetComponent<PlayerScript>().jumpStrength * RateChange;
-            tempPlayerMoveSpeedInit = other.GetComponent<PlayerScript>().moveSpeedRate * RateChange;
-            other.GetComponent<PlayerScript>().jumpStrength *= RateChange;
-            other.GetComponent<PlayerScript>().moveSpeedRate *= RateChange;
+            if (other.GetComponent<PlayerScript>())
+            {
+                if (RateChange < 1.0f)
+                {
+                    other.GetComponent<PlayerScript>().jumpStrength *= RateChange;
+                }
+                other.GetComponent<PlayerScript>().moveSpeedRate *= RateChange;
+                other.GetComponent<PlayerScript>().maxVelocityMag *= RateChange;
+                other.GetComponent<Rigidbody>().velocity *= RateChange;
+            }
+        }
+        else
+        {
+            if (other.GetComponent<PlayerScript>())
+            {
+                other.GetComponent<PlayerScript>().PlayerWins();
+            }
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.GetComponent<PlayerScript>())
+        if (!isGoal)
         {
-            other.GetComponent<PlayerScript>().jumpStrength = tempPlayerJumpRateInit;
-            other.GetComponent<PlayerScript>().moveSpeedRate = tempPlayerMoveSpeedInit;
-            tempPlayerJumpRateInit = 0.0f;
-            tempPlayerMoveSpeedInit = 0.0f;
+            if (other.GetComponent<PlayerScript>())
+            {
+                if (RateChange < 1.0f)
+                {
+                    other.GetComponent<PlayerScript>().jumpStrength /= RateChange;
+                }
+                other.GetComponent<PlayerScript>().moveSpeedRate /= RateChange;
+                other.GetComponent<PlayerScript>().maxVelocityMag /= RateChange;
+            }
         }
     }
 }

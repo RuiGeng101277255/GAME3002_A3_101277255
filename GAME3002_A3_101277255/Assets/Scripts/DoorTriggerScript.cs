@@ -9,11 +9,13 @@ public class DoorTriggerScript : MonoBehaviour
     public ScreenMessageScript screenMessage;
 
     HingeJoint door_Hinge;
+    Rigidbody door_RB;
 
     // Start is called before the first frame update
     void Start()
     {
         door_Hinge = GetComponent<HingeJoint>();
+        door_RB = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -31,12 +33,13 @@ public class DoorTriggerScript : MonoBehaviour
                 if (other.GetComponent<PlayerScript>().LevelofSecurity >= KeysRequired)
                 {
                     lightObj.color = Color.green;
+                    door_RB.isKinematic = false;
                     door_Hinge.useMotor = true;
                 }
                 else
                 {
                     lightObj.color = Color.red;
-                    screenMessage.setTextDisplayed("NOT ENOUGH KEYS\nTO OPEN DOOR");
+                    screenMessage.setTextDisplayed("SECURITY LEVEL NOT\nREACHED TO OPEN");
                 }
             }
         }

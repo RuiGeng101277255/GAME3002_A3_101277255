@@ -5,6 +5,8 @@ using UnityEngine;
 public class TimerScript : MonoBehaviour
 {
     public float maxtime = 120.0f; //120 secs in 2 min
+    public bool isPaused;
+    public PlayerScript player;
 
     TextMesh timer_txt;
     float sec;
@@ -23,8 +25,18 @@ public class TimerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        getModulusMode();
-        maxtime -= Time.deltaTime;
+        if (!isPaused)
+        {
+            maxtime -= Time.deltaTime;
+            getModulusMode();
+
+            if (maxtime <= 0.0f)
+            {
+                player.PlayerInitialLiveCount = 0;
+                player.die();
+                isPaused = true;
+            }
+        }
     }
 
     private void getModulusMode() // Modulus arithmetic for separating min, sec and millisec from timer of unit seconds

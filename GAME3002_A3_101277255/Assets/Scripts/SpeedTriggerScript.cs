@@ -18,8 +18,7 @@ public class SpeedTriggerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(tempPlayerJumpRateInit);
-        print(tempPlayerMoveSpeedInit);
+
     }
 
     private void OnTriggerEnter(Collider other)

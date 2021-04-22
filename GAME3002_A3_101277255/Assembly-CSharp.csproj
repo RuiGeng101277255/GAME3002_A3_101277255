@@ -59,9 +59,10 @@
     <Compile Include="Assets\Scripts\TimerScript.cs" />
     <Compile Include="Assets\Scripts\SpeedTriggerScript.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
-    <Compile Include="Assets\Scripts\KeyScript.cs" />
-    <Compile Include="Assets\Scripts\DoorTriggerScript.cs" />
     <Compile Include="Assets\Scripts\ScreenMessageScript.cs" />
+    <Compile Include="Assets\Scripts\DoorTriggerScript.cs" />
+    <Compile Include="Assets\Scripts\KeyScript.cs" />
+    <Compile Include="Assets\Scripts\TrapDamageScript.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\read me.txt" />

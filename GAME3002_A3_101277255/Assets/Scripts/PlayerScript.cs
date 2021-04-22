@@ -8,7 +8,6 @@ public class PlayerScript : MonoBehaviour
     public int LevelofSecurity;
     public float maxVelocityMag;
     public int PlayerInitialLiveCount;
-    public float deathDuration;
     public ScreenMessageScript screenM;
     public TimerScript timer;
 
@@ -44,24 +43,15 @@ public class PlayerScript : MonoBehaviour
         //Check game state (if it's over or still playing)
         if (!gameOver)
         {
-            //A brief delay after player dies, before giving back the controls
             if (isDead)
             {
-                tempDisableTimer = deathDuration;
                 isDead = false;
             }
             else
             {
-                if (tempDisableTimer > 0.0f)
-                {
-                    tempDisableTimer -= Time.deltaTime;
-                }
-                else
-                {
-                    CheckPlayerInput();
-                    checkOrientation();
-                    checkIfGroundedAnim();
-                }
+                CheckPlayerInput();
+                checkOrientation();
+                checkIfGroundedAnim();
             }
         }
         else
@@ -90,6 +80,7 @@ public class PlayerScript : MonoBehaviour
             player_RB.position = player_reSpawnPos;
             player_RB.velocity = new Vector3(0.0f, 0.0f, 0.0f);
             isDead = true;
+            isGrounded = true;
         }
         else
         {
@@ -169,17 +160,13 @@ public class PlayerScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        //When player comes in contact with any surface, it will allow him/her to jump again. In case of difficult jumps
         isGrounded = true;
     }
 
     //For animation purposes
     private void checkIfGroundedAnim()
     {
-        if (player_RB.velocity.magnitude < 0.1f)
-        {
-            isGrounded = true;
-        }
-
         if (isGrounded)
         {
             player_Anim.SetBool("isJumping", false);

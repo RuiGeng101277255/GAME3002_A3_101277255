@@ -1,0 +1,25 @@
+Read Me:
+
+Instruction:
+W, A, S ---- Player Movements
+R to restart after the player wins/loses
+
+Collect Keys (Kunai ninja weapon) to unlock doors (with spotlights) to reach the next segment of the level. 
+
+The kunai/key will also serve as a respawn point for death after collecting.
+
+Your task is to reach the goal (yellow cubic region at the very top) within 2 minutes and with 5 lives remaining (At 0, the player loses)
+
+Some jumps are hard, so to help, player is able to jump again after touching another surface (for cases of longer more difficult jumps)
+
+
+Contains the following requirements:
+* 2 min timer, separated at minutes, seconds and milliseconds
+* Player movement inputs add Impulse to the rigidbody
+* 2 traps with torque (spinning axes)
+* 4 Unstable platforms with springs
+* All level platforms use physics material of either: concrete, icymaterial or bouncymaterial.
+* 2 SpeedUp zones and 2 Slow down zones using trigger (by default they are all concrete's physics materials, so different effects are only produced by the trigger).
+* 6 spike traps
+* 3 environments separated by 2 doors with hinge joints and opened only if player has enough keys/level of clearance. Detection through trigger events.
+* Camera attached to the player with a spring joint, a lot of forces and damping

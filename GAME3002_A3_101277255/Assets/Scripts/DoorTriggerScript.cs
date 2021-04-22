@@ -26,11 +26,11 @@ public class DoorTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!door_Hinge.useMotor)
+        if(!door_Hinge.useMotor) //If door hasn't been used
         {
             if (other.GetComponent<PlayerScript>())
             {
-                if (other.GetComponent<PlayerScript>().LevelofSecurity >= KeysRequired)
+                if (other.GetComponent<PlayerScript>().LevelofSecurity >= KeysRequired) //If player has collected enough keys. Green lets player pass, red doesn't.
                 {
                     lightObj.color = Color.green;
                     door_RB.isKinematic = false;
@@ -47,6 +47,8 @@ public class DoorTriggerScript : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+        //Resets color back to white when player leaves
+
         if (!door_Hinge.useMotor)
         {
             if (other.GetComponent<PlayerScript>())

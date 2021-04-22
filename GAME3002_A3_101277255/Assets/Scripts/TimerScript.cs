@@ -17,9 +17,6 @@ public class TimerScript : MonoBehaviour
     void Start()
     {
         timer_txt = GetComponent<TextMesh>();
-        min = 2;
-        sec = 0;
-        millisec = 0;
     }
 
     // Update is called once per frame
@@ -27,14 +24,17 @@ public class TimerScript : MonoBehaviour
     {
         if (!isPaused)
         {
-            maxtime -= Time.deltaTime;
             getModulusMode();
 
-            if (maxtime <= 0.0f)
+            if (maxtime <= 0.0f) //Player runs out of time, loses
             {
                 player.PlayerInitialLiveCount = 0;
                 player.die();
                 isPaused = true;
+            }
+            else
+            {
+                maxtime -= Time.deltaTime;
             }
         }
     }

@@ -38,7 +38,10 @@ public class SpeedTriggerScript : MonoBehaviour
         {
             if (other.GetComponent<PlayerScript>())
             {
-                other.GetComponent<PlayerScript>().PlayerWins();
+                if (!other.GetComponent<PlayerScript>().gameOver)
+                {
+                    other.GetComponent<PlayerScript>().PlayerWins();
+                }
             }
         }
     }

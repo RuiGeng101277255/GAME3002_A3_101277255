@@ -21,6 +21,7 @@ public class KeyScript : MonoBehaviour
         if (collision.gameObject.GetComponent<PlayerScript>())
         {
             collision.gameObject.GetComponent<PlayerScript>().LevelofSecurity += 1;
+            collision.gameObject.GetComponent<PlayerScript>().setRespawnPos(transform.position);
             Destroy(gameObject);
         }
     }

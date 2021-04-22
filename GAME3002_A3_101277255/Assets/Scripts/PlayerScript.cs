@@ -153,20 +153,6 @@ public class PlayerScript : MonoBehaviour
         isGrounded = true;
     }
 
-    private void OnCollisionExit(Collision collision)
-    {
-        //when player isn't in contact with anything, aka in air or stationary
-
-        //if (player_RB.velocity.magnitude < 0.1f)
-        //{
-        //    isGrounded = true;
-        //}
-        //else
-        //{
-        //    isGrounded = false;
-        //}
-    }
-
     private void checkIfGroundedAnim()
     {
         if (player_RB.velocity.magnitude < 0.1f)

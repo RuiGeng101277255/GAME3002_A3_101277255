@@ -47,7 +47,7 @@ public class ScreenMessageScript : MonoBehaviour
         if (MessageIndex == 0)
         {
             mess_TextMesh.text = s;
-            mess_TextMesh.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
+            mess_TextMesh.color = Color.red;
             tempDuration = textDuration;
         }
     }
